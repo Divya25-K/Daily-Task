@@ -21,3 +21,4 @@ public class Vowel
         Vowel_Or_Consonant('I');
     }
 }
+//finished task
