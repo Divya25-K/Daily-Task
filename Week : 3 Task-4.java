@@ -1,22 +1,38 @@
+class Company 
+{
+    static String company_name = "India Land";
 
-    class Employee {
-    private double salary;
-    public double getSalary() {
-        return salary;
+    String employee_name;
+
+    Company(String employee_name) 
+    {
+        this.employee_name = employee_name;
     }
-    public void setSalary(double salary) {
-        if (salary >= 15000) {
-            this.salary = salary;
-        } else {
-            System.out.println("Salary must be at least 15000");
-        }
+
+    void displayDetails() 
+    {
+        System.out.println("Company Name: " + company_name);
+        System.out.println("Employee Name: " + employee_name);
     }
 }
-public class Main {
-    public static void main(String[] args) {
-        Employee emp = new Employee();
-        emp.setSalary(12000);
-        emp.setSalary(20000);
-        System.out.println("Salary: " + emp.getSalary());
+
+
+public class Main 
+{
+    public static void main(String[] args)
+    {
+        Company employee1 = new Company("Madhu");
+        Company employee2 = new Company("Divya");
+        Company employee3 = new Company("Jeeva");
+        System.out.println("Employee 1 Details:");
+        employee1.displayDetails();
+        System.out.println();
+
+        System.out.println("Employee 2 Details:");
+        employee2.displayDetails();
+        System.out.println();
+
+        System.out.println("Employee 3 Details:");
+        employee3.displayDetails();
     }
-} 
+}
