@@ -1,3 +1,5 @@
+//MULTIPLICATION TABLE
+
 import java.util.Scanner;
 
 public class MultiplicationTable 
