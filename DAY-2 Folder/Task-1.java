@@ -1,3 +1,5 @@
+//AREA OF RECTANGLE
+
 import java.util.Scanner;
 
 class RectangleArea {
